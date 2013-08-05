@@ -9,4 +9,22 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Skypiea::Application.config.secret_key_base = '0f2b119c7a84b30217ac0fb2497f81bbca40b38f1fc45dbe2d6c0b6e476b0c2d97f46ed9bf4bd50d62b1406777243cfa1499dc3d9a8adae43b22d272ead1309b'
+
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+Skypiea::Application.config.secret_key_base = secure_token
+
+#'0f2b119c7a84b30217ac0fb2497f81bbca40b38f1fc45dbe2d6c0b6e476b0c2d97f46ed9bf4bd50d62b1406777243cfa1499dc3d9a8adae43b22d272ead1309b'
