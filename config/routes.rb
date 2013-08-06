@@ -1,4 +1,6 @@
 Skypiea::Application.routes.draw do
+  get "static_pages/about"
+  get "static_pages/term"
   get "users/new"
   resources :users
 
