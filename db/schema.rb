@@ -11,14 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130808135824) do
+ActiveRecord::Schema.define(version: 20130808140405) do
 
   create_table "stickers", force: true do |t|
     t.string   "title"
     t.text     "text"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "description"
+    t.integer  "number_of_stickers"
+    t.integer  "views"
+    t.integer  "likes"
+    t.float    "price"
+    t.string   "file"
+    t.string   "screenshot"
+    t.integer  "user_id"
   end
+
+  add_index "stickers", ["user_id"], name: "index_stickers_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "username"
