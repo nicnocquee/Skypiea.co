@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 describe "Static Pages" do
-  
+  let(:base_title){"Skypiea"}
+
   describe "About page" do
     it "should have content 'About'" do
       visit '/static_pages/about'
@@ -10,7 +11,7 @@ describe "Static Pages" do
 
     it "should have the right title" do 
     	visit '/static_pages/about'
-    	expect(page).to have_title('Skypiea | About')
+    	expect(page).to have_title("#{base_title} | About")
     end
   end
 
@@ -22,7 +23,7 @@ describe "Static Pages" do
 
     it "should have the right title" do 
     	visit '/static_pages/term'
-    	expect(page).to have_title('Skypiea | Terms')
+    	expect(page).to have_title("#{base_title} | Terms")
     end
   end
 end
