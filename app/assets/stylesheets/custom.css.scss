@@ -1,0 +1,372 @@
+
+/*
+	Document    :	style
+	Created on  :	Aug 09, 2013, 9:36:32 PM
+	Author      :	Ahmad Gulzar
+	Author URL  :	http://www.ahmadgulzar.com
+	Description :	Purpose of the stylesheet follows.
+*/
+
+*{
+	margin:0;
+	padding:0;
+	border:0 none;
+}
+
+.clr{
+	clear:both;
+}
+
+a{
+	text-decoration:none;
+	color:blue;
+	text-align:left;
+}
+
+table, tr, td{
+	margin:0;
+	padding:0;
+	border-collapse:collapse;
+}
+
+p, h1, h2, h3, h4, ul, li, img, input{
+	text-align:left;
+	float:left;
+}
+
+input::-moz-focus-inner{ 
+    border: 0;
+    padding: 0;
+}
+
+ul,li{
+	list-style:none;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background: #DEDEDE;
+	color:black;
+}
+
+#main{
+	width:100%;
+	text-align:center;
+	float:left;
+}
+
+.container{
+	width: 1200px;
+	display:inline-block;
+}
+
+#header{
+	background: url(/assets/header_bg.png);
+	width: 100%;
+	height: 610px;
+	float: left;
+}
+
+#header img{
+	float: right;
+	width: 676px;
+	margin: -17px 60px 0 0;
+}
+
+#content{
+	width: 960px;
+	display: inline-block;
+}
+
+#menu_bar{
+	width: 100%;
+	float: left;
+	height: 70px;
+	background: #FFFFFF;
+	margin: 31px 0 0 0;
+}
+
+#left_menu{
+	float: left;
+	margin: 23px 0 0 0;
+}
+
+#left_menu li a{
+	float: left;
+	font-size: 24px;
+	line-height: 1em;
+	margin-left: 30px;
+	color: #FF3500;
+}
+
+#left_menu li a.active{
+	font-weight: bold;
+	line-height: 0.9em;
+}
+
+#menu_right{
+	float: right;
+}
+
+#menu_right ul{
+	margin: 18px 0 0 0;
+	float: right;
+}
+
+#menu_right ul li a{
+	font-size:24px;
+	float: left; 
+	color: #941A00;
+	margin-right: 25px;
+}
+#search{
+	float: right;
+	border: 1px solid #cbcbcb;
+	width: 274px;
+	height: 35px;
+	border-radius: 3px;
+	margin: 18px 21px 0 0;
+}
+
+.submit{
+	float: left;
+	background: url(/assets/search.png);
+	width: 28px;
+	cursor: pointer;
+	height: 26px;
+	margin: 5px 0 0 7px;
+}
+
+.search_input{
+	float: left;
+	width: 220px;
+	height: 28px;
+	color: #CCC;
+	font-weight: bold;
+	font-size: 16px;
+	margin: 3px 0 0 5px;
+}
+
+#signup_bar{
+	width: 100%;
+	float: left;
+	background: #CBCBCB;
+	height: 94px;
+	margin: 23px 0 0 0;
+}
+
+#signup_bar p{
+	line-height: 94px;
+	font-size: 24px;
+	margin-left: 35px;
+}
+
+#signup_bar p span{
+	font-weight: bold;
+}
+
+#signup_bar a{
+	width: 156px;
+	height: 50px;
+	background: #C42C00;
+	text-align: center;
+	color: white;
+	line-height: 50px;
+	font-weight: bold;
+	font-size: 24px;
+	float: right;
+	margin: 22px 21px 0 0;
+}
+
+#products{
+	width: 100%;
+	float: left;
+	background: white;
+	margin: 22px 0 0 0;
+}
+
+.products_row{
+	border-bottom: 1px solid #dedede;
+	float: left;
+	width: 100%;
+}
+
+.product_block{
+	width: 207px;
+	float: left;
+	padding: 17px 16px 0 16px;
+	border-right: 1px solid #dedede;
+	height: 265px;
+}
+
+.product_block.last{
+	border-right: none !important;
+}
+
+.product_block img{
+	float: left;
+}
+
+.product_block h2{
+	float: left;
+	width: 100%;
+	color: #EB3D00;
+	margin: 8px 0 0 0;
+}
+
+.text_line2{
+	color: #EB3D00;
+	background: url(/assets/user_pic.png) no-repeat left center;
+	padding-left: 20px;
+	font-size: 18px;
+	margin: 7px 0 2px 0;
+	widows: 100%;
+	float: left;
+}
+
+.icon1{
+	color: #c1c1c1;
+	background: url(/assets/eye_pic.png) no-repeat left 5px;
+	padding-left: 25px;
+	margin-top: 6px;
+	font-size: 18px;
+}
+
+.icon2{
+	color: #c1c1c1;
+	background: url(/assets/comment_pic.png) no-repeat left 5px;
+	padding-left: 23px;
+	margin-top: 7px;
+	font-size: 18px;
+	margin-left: 10px;
+}
+
+.icon3{
+	color: #c1c1c1;
+	background: url(/assets/heart_pic.png) no-repeat left 5px;
+	padding-left: 19px;
+	margin-top: 6px;
+	font-size: 18px;
+	margin-left: 11px;
+}
+
+.products_row2{
+	border-bottom: none !important;
+}
+
+.products_row2 .product_block{
+	height: 275px !important;
+}
+
+#buy_bar{
+	width: 100%;
+	height: 180px;
+	background: white;
+	margin:23px 0 0 0;
+	float: left; 
+}
+
+#buy_left{
+	float: left;
+}
+
+#buy_left h1{
+	float: left;
+	margin: 30px 0 0 30px;
+	line-height: 0.89em;
+	font-size: 31px;
+}
+
+#buy_left a{
+	clear: left;
+	float: left;
+	width: 174px;
+	height: 43px;
+	line-height: 43px;
+	margin: 10px 0 0 30px;
+	background: #A3D671;
+	color: white;
+	text-align: center;
+	font-size: 28px;
+}
+
+#buy_bar img{
+	float: right;
+	margin: 10px 10px 0 0;
+}
+
+#more{
+	display: inline-block;
+	margin: 20px 0 0 0;
+}
+
+#more a{
+	font-size: 31px;
+	float: left;
+	color: #575757;
+	font-weight: bold;
+}
+
+#more a img{
+	float: right;
+	margin: 15px 0 0 5px;
+}
+
+#footer{
+	float: left;
+	width: 100%;
+	margin: 25px 0 0 0;
+	background: url(/assets/footer_bg.png);
+	height: 232px;
+}
+
+#footer_left{
+	float: left;
+	margin: 10px 0 0 120px;
+	width: 600px;
+}
+
+#footer_left h1{
+	font-size: 28px;
+	color: white;
+	margin: 30px 0 5px 0;
+}
+
+#footer_left a{
+	width: 100%;
+	font-size: 26px;
+	color: white;
+	float: left;
+	margin: 10px 0 0 0 ;
+}
+
+#footer_left a img{
+	float: left;
+	margin: 5px 7px 0 0;
+
+}
+
+#footer_right{
+	float: right;
+}
+
+#footer_right ul{
+	margin: 40px 120px 0 0;
+	float: right;
+	width: 300px;
+}
+
+#footer_right ul li{
+	float: right;
+	width: 100%;
+}
+
+#footer_right ul li a{
+	float: right;
+	color: white;
+	margin-top: 10px;
+	font-size: 24px;
+	width: 100%;
+	text-align: right;
+}

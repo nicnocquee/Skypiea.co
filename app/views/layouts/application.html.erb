@@ -1,14 +1,26 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--[if lt IE 7 ]><html class="ie ie6" xmlns="http://www.w3.org/1999/xhtml> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" xmlns="http://www.w3.org/1999/xhtml> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" xmlns="http://www.w3.org/1999/xhtml> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" xmlns="http://www.w3.org/1999/xhtml> <![endif]-->
 <html>
 <head>
   <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
+<div id="main">
+	<div class="container">
+		<%= render 'layouts/header' %>
+		<%= yield %>
+		<%= render 'layouts/footer' %>
+	</div>
+</div>
 
-<%= yield %>
+<%= debug(params) if Rails.env.development? %>
 
 </body>
 </html>
