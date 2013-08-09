@@ -1,4 +1,4 @@
-
+@import "bootstrap";
 /*
 	Document    :	style
 	Created on  :	Aug 09, 2013, 9:36:32 PM
@@ -118,7 +118,7 @@ body{
 	font-size:24px;
 	float: left; 
 	color: #941A00;
-	margin-right: 25px;
+	margin: 8px 25px 0 0;
 }
 #search{
 	float: right;
@@ -129,10 +129,10 @@ body{
 	margin: 18px 21px 0 0;
 }
 
-.submit{
+.submit_input{
 	float: left;
 	background: url(/assets/search.png);
-	width: 28px;
+	width: 28px !important;
 	cursor: pointer;
 	height: 26px;
 	margin: 5px 0 0 7px;
@@ -140,12 +140,14 @@ body{
 
 .search_input{
 	float: left;
-	width: 220px;
+	width: 215px;
 	height: 28px;
 	color: #CCC;
 	font-weight: bold;
 	font-size: 16px;
 	margin: 3px 0 0 5px;
+	border: 0px !important;
+	box-shadow: none !important;
 }
 
 #signup_bar{
@@ -213,6 +215,12 @@ body{
 	width: 100%;
 	color: #EB3D00;
 	margin: 8px 0 0 0;
+	font-size: 1.5em;
+	-webkit-margin-before: 1em;
+-webkit-margin-after: 0.6em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+line-height:0;
 }
 
 .text_line2{
